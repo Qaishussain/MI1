@@ -56,3 +56,22 @@ div.gallery img {
     padding: 15px;
     text-align: center;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+.tss tr:nth-child(even) {
+    background-color: #eee;
+}
+.tss tr:nth-child(odd) {
+   background-color:#fff;
+}
+.tss th {
+    background-color: black;
+    color: white;
+}
