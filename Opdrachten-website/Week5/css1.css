@@ -1,0 +1,108 @@
+body {
+	
+    background-color: deepskyblue;
+	
+	padding:200px 200px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+div.gallery {
+
+    background-image: url(images/borderless-optimized.png);
+    background-repeat: no-repeat;
+
+    padding-right: 300px;
+    padding-left: 300px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+.button5 {
+    background-color:deepskyblue;
+
+    color: white;
+    border: 2px solid #555555;
+}
+
+.button5:hover {
+    background-color:crimson;
+    color: white;
+}
+
+p {
+    background-color: deepskyblue;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    border-top-color: #000;
+    border-right-color: #000;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    padding-bottom: 5px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+   
+    
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    background-color: deepskyblue;
+
+}
+
+div.gallery img {
+    background-color: deepskyblue;
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+.tss tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.tss tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tss th {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
