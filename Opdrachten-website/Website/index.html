@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="./Images/favicon.png">
+	<title>l'avenir</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	 
+	<link rel="stylesheet" type="text/css" href="css/TemplateCss.css">
+</head>
+
+<body>
+	<header>
+		<nav class="fixed-to-top">
+			<div>
+				<h1><a href="index.html"><img src="Images/logo.png" alt="logo l'avenir"></a></h1>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Producten &amp; diensten</a>
+					<div class="dropdown-content">
+						<a href="pages/autokeuring.html">Auto keuring</a>
+						<a href="pages/airco.html">Aircoservice</a>
+						<a href="pages/onderhoud.html">Onderhoud volgens het boekje</a>
+					</div>
+				</li>
+				<li><a href="pages/tekoop.php">Te koop</a></li>
+				<li><a href="pages/review.php">Recensie</a></li>
+				<li><a href="pages/overons.php">Over ons</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="main">
+		<div class="inner">
+			<section class="wrapper style1">
+				<div class="image fit flush">
+					<img src="Images/test.jpg" alt="image van garage" />
+				</div>
+				<header class="special">
+					<h2>L'avenir </h2>
+				
+				</header>
+				<p>Wij doen alles voor uw auto
+U wenst dezelfde kwaliteit van onderdelen en expertise als bij de merkgarage maar dan zonder de nadelen ervan, dan bent u bij l'avenir Car Service op de juiste plaats: Wij bieden advies, reparatie en onderhoud. l'avenir Car Service is het grootste netwerk van onafhankelijke garages in Belgie. Alle automerken zijn van harte welkom! Voor onderhoud en reparatie is uw auto bij l'avenir in goede handen. Ons netwerk staat elke dag voor u klaar.</p><br>
+<header class="special">
+					<h2>Album </h2>
+					<details><summary>Detail</summary><p>Hieronder bevindt u fotos van de garage.</p></details>
+				</header>
+<p>Vrijwel elke foto is auteursrechtelijk beschermd, en mag dus niet worden gepubliceerd of gekopieerd zonder toestemming van de fotograaf. Ook niet als de publicatie zonder commercieel oogmerk is of alleen op Internet plaatsvindt.</p><br>
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="Images/Vanbuiten.JPG" style="width:100%" height="100%">
+  <img class="mySlides" src="Images/binnen.JPG"  style="width:100%" height="100%">
+  <img class="mySlides" src="Images/binnen2.JPG"  style="width:100%" height="100%">
+   <img class="mySlides" src="Images/banden.JPG"  style="width:100%" height="100%">
+    <img class="mySlides" src="Images/werkingplaats.JPG"  style="width:100%" height="100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)"> Terug</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)"> Volgende</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+   <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+    <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+</div>
+			</section>
+		</div>
+	</section>
+	<footer>
+		<section id="lab_social_icon_footer">
+			<a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social" ></i></a>
+			<a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+			<a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+			<a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+			<h2>Made with love by Qais Hussain &copy; 2017 </h2>
+		</section>
+	</footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-black", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-black";
+}
+</script>
+</body>
+
+</html>
