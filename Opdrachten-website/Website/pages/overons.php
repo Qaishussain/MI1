@@ -43,15 +43,10 @@
 					<h2><br>Locatie</h2>
 				</header>
                 <div class="google-maps">
-				 <div class="embed-responsive embed-responsive-100x400px">
-<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=chausse de ivoz 147 flemalle&t=k&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">https://www.pureblack.de/google-maps/</a></div>
-<style>.mapouter{overflow:hidden;height:400px;width:100%;}.gmap_canvas {background:none!important;height:400px;width:100%;}</style></div>
-  </div>
-                    <div class="embed-responsive embed-responsive-100x400px">
-<iframe src="http://my.ctrlq.org/maps/#street|0.9999999999999997|347.527410088174|-6.75274335377992|50.59029588153356|5.47193218084567" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
-			
+                <div class="map-responsive">
+				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.977463768083!2d5.469601415547078!3d50.590372185154244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f8d52b6bf427%3A0x26b18f423520663e!2sChauss%C3%A9e+d&#39;Ivoz+147%2C+4400+Fl%C3%A9malle!5e0!3m2!1snl!2sbe!4v1513948924685" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
+                </div>
 				<header class="special">
 					<h2>Over ons</h2>
 				</header>
