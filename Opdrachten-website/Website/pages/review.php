@@ -6,7 +6,7 @@ if(isset($_POST['MM_insert']))
 
         // connect to mysql
 
-        $pdoConnect = new PDO("mysql:host=localhost;dbname=id3972295_lavenir","id3972295_qais","143DMC54726q");
+        $pdoConnect = new PDO("mysql:host=localhost;dbname=id3972295_lavenir","root","");
     } catch (PDOException $exc) {
         echo $exc->getMessage();
         exit();
@@ -47,7 +47,7 @@ if(isset($_POST['MM_insert']))
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	
 	<link rel="stylesheet" type="text/css" href="../css/TemplateCss.css">
 </head>
@@ -90,7 +90,7 @@ if(isset($_POST['MM_insert']))
 
         // connect to mysql
 
-        $pdoConnect = new PDO("mysql:host=localhost;dbname=id3972295_lavenir","id3972295_qais","143DMC54726q");
+        $pdoConnect = new PDO("mysql:host=localhost;dbname=id3972295_lavenir","root","");
     } catch (PDOException $exc) {
         echo $exc->getMessage();
         exit();
@@ -124,17 +124,20 @@ if(isset($_POST['MM_insert']))
 						<form name="form1" action = "" method="POST" class="form" id="form1">
 
 							<p class="name">
-								<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+								 <label for="name">Naam</label>
+								<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Naam" id="name" />
 								<span class="error"><p id="name_error"></p></span>
 							</p>
 
 							<p class="email">
+								 <label for="email">email</label>
 								<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
 								<span class="error"><p id="email_error"></p></span>
 							</p>
 
 							<p class="text">
-								<textarea name="message" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+								 <label for="comment">commentaar</label>
+								<textarea name="message" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Commentaar"></textarea>
 								<span class="error"><p id="comment_error"></p></span>
 							</p>
 					  <div class="submit">
